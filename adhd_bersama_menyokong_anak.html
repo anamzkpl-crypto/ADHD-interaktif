@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10152f">
+<meta name="description" content="Panduan interaktif ADHD tentang kesinambungan sokongan antara rumah dan sekolah.">
+<title>Bersama Menyokong Anak | Panduan ADHD</title>
+<style>
+:root{
+  --bg:#0b1023;--panel:#141b36;--panel2:#1b2446;--text:#f4f6ff;--muted:#b7c0e0;
+  --purple:#a78bfa;--blue:#67b7ff;--mint:#7ce8d0;--line:rgba(255,255,255,.12);
+  --shadow:0 18px 50px rgba(0,0,0,.25);--radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(112,81,209,.22),transparent 35%),radial-gradient(ellipse at 0% 30%,rgba(40,128,202,.15),transparent 32%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--blue)}
+button{font:inherit;cursor:pointer}
+.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(11,16,35,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px;text-decoration:none;color:var(--text)}
+.brand-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:21px}
+nav{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}
+nav a{color:var(--muted);text-decoration:none;padding:9px 11px;border-radius:10px;font-size:.9rem}
+nav a:hover,nav a.active{background:rgba(167,139,250,.16);color:white}
+.menu-btn{display:none;background:var(--panel2);border:1px solid var(--line);color:white;border-radius:10px;padding:8px 12px}
+.hero{padding:78px 0 55px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:45px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(167,139,250,.35);background:rgba(167,139,250,.1);color:#d9ccff;padding:7px 12px;border-radius:999px;font-size:.85rem;font-weight:700}
+h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.05;letter-spacing:-.055em;margin:20px 0}
+.gradient{background:linear-gradient(100deg,#fff 5%,#c5b7ff 50%,#80d7ff);color:transparent;background-clip:text;-webkit-background-clip:text}
+.lead{color:var(--muted);font-size:1.12rem;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:13px;padding:12px 17px;font-weight:750;text-decoration:none;transition:transform .2s,filter .2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.primary{background:linear-gradient(100deg,#7c83ff,#a78bfa);color:#10132d;box-shadow:0 10px 30px rgba(124,131,255,.25)}
+.secondary{background:rgba(255,255,255,.06);border:1px solid var(--line);color:white}
+.hero-art{position:relative;min-height:350px;display:grid;place-items:center}
+.orbit{position:absolute;width:300px;height:300px;border:1px solid rgba(167,139,250,.25);border-radius:50%;animation:spin 32s linear infinite}
+.orbit:before,.orbit:after{content:"";position:absolute;width:15px;height:15px;border-radius:50%;background:var(--blue);box-shadow:0 0 25px var(--blue)}
+.orbit:before{top:40px;left:42px}.orbit:after{right:12px;bottom:70px;background:var(--purple);box-shadow:0 0 25px var(--purple)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.brain{width:215px;height:215px;border-radius:38% 62% 52% 48% / 45% 40% 60% 55%;display:grid;place-items:center;font-size:90px;background:linear-gradient(145deg,rgba(103,183,255,.23),rgba(167,139,250,.23));border:1px solid rgba(255,255,255,.18);box-shadow:0 0 80px rgba(120,103,255,.18),inset 0 0 45px rgba(255,255,255,.04);animation:float 5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px) rotate(2deg)}}
+.float-card{position:absolute;padding:12px 15px;border-radius:15px;background:rgba(20,27,54,.9);border:1px solid var(--line);box-shadow:var(--shadow);font-size:.9rem}
+.float-card strong{display:block;color:var(--mint)}
+.fc1{top:22px;right:0}.fc2{bottom:18px;left:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:10px 0 55px}
+.stat{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:16px;padding:18px}
+.stat b{display:block;font-size:1.05rem}.stat span{color:var(--muted);font-size:.9rem}
+section{padding:48px 0;scroll-margin-top:82px}
+.section-head{max-width:740px;margin-bottom:25px}
+.kicker{color:var(--mint);font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.13em}
+h2{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.15;letter-spacing:-.035em;margin:8px 0 12px}
+.section-head p,.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:linear-gradient(160deg,rgba(27,36,70,.92),rgba(17,24,48,.96));border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.card h3{margin:9px 0 7px;font-size:1.1rem}
+.card p{margin:0;color:var(--muted)}
+.iconbox{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(167,139,250,.14);font-size:23px}
+.notice{border:1px solid rgba(124,232,208,.25);background:rgba(124,232,208,.07);padding:16px 18px;border-radius:15px;color:#d8fff5;margin-top:18px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.case-top{display:flex;gap:15px;align-items:center;margin-bottom:18px}
+.avatar{width:58px;height:58px;display:grid;place-items:center;border-radius:18px;background:linear-gradient(135deg,#78c8ff,#a78bfa);font-size:30px}
+.pill{display:inline-block;font-size:.78rem;border:1px solid var(--line);color:#d7dff8;border-radius:999px;padding:4px 9px;margin:3px 3px 0 0}
+.case-tabs,.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0}
+.tab-btn{border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted);padding:9px 13px;border-radius:11px}
+.tab-btn[aria-selected="true"]{background:rgba(167,139,250,.18);border-color:var(--purple);color:white}
+.tab-panel{padding:18px;border-radius:15px;background:rgba(255,255,255,.035);border:1px solid var(--line);min-height:120px}
+.tab-panel p{margin:0;color:var(--muted)}
+.org-card{display:flex;flex-direction:column;gap:10px}
+.org-card .tag{color:var(--mint);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.org-card details{border-top:1px solid var(--line);padding-top:10px}
+summary{cursor:pointer;color:#e2dcff;font-weight:700}
+details p{margin-top:8px!important}
+.intervention-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:18px}
+.checklist{display:grid;gap:11px}
+.check-item{display:flex;gap:11px;align-items:flex-start;padding:13px;background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:13px}
+.check-item input{width:19px;height:19px;margin-top:4px;accent-color:#a78bfa;flex-shrink:0}
+.check-item span{color:var(--muted)}
+.progress-wrap{margin-top:16px}
+.progress-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:.9rem;margin-bottom:7px}
+.progress{height:9px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden}
+.progress-bar{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--purple));transition:width .25s}
+.sources{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.source{display:flex;gap:14px;align-items:flex-start;text-decoration:none;color:var(--text);transition:transform .2s}
+.source:hover{transform:translateY(-3px)}
+.source .iconbox{flex-shrink:0}
+.source small{display:block;color:var(--muted);margin-top:4px}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:.9rem}
+.backtop{position:fixed;right:18px;bottom:18px;z-index:10;border:1px solid var(--line);border-radius:50%;width:45px;height:45px;background:var(--panel2);color:white;box-shadow:var(--shadow)}
+.fade-in{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+:focus-visible{outline:3px solid var(--mint);outline-offset:3px}
+@media(max-width:850px){.hero{grid-template-columns:1fr;gap:10px;padding-top:55px}.hero-art{min-height:300px;grid-row:1}.hero-copy{grid-row:2}.grid{grid-template-columns:repeat(2,1fr)}.intervention-layout{grid-template-columns:1fr}.nav{flex-wrap:wrap;padding:12px 0}.menu-btn{display:block}nav{display:none;width:100%;justify-content:flex-start;padding-bottom:8px}nav.open{display:flex}nav a{font-size:.88rem}.stats{margin-bottom:30px}}
+@media(max-width:580px){.wrap{width:min(100% - 26px,1120px)}.grid,.two-col,.sources,.stats{grid-template-columns:1fr}.hero-art{min-height:260px}.brain{width:165px;height:165px;font-size:68px}.orbit{width:235px;height:235px}.fc1{right:-2px;top:8px}.fc2{left:-2px;bottom:8px}.card{padding:18px}section{padding:35px 0}h1{font-size:2.8rem}.float-card{font-size:.8rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.fade-in{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#utama" aria-label="Kembali ke laman utama"><span class="brand-icon">✦</span><span>ADHD <span style="color:var(--purple)">Bersama</span></span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">☰ Menu</button>
+    <nav id="mainNav" aria-label="Navigasi utama">
+      <a href="#utama" class="active">Utama</a><a href="#kes">Kes Kajian</a><a href="#kementerian">Kementerian</a><a href="#ngo">NGO</a><a href="#intervensi">Intervensi</a><a href="#rujukan">Rujukan</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="wrap hero" id="utama">
+  <div class="hero-copy">
+    <span class="eyebrow">✦ Panduan sokongan interaktif</span>
+    <h1><span class="gradient">Bersama</span><br> Menyokong Anak</h1>
+    <p class="lead">Panduan ringkas untuk memahami ADHD dan membina kesinambungan sokongan antara rumah dengan sekolah.</p>
+    <div class="actions"><a class="btn primary" href="#kes">Terokai panduan <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#intervensi">Lihat pelan intervensi</a></div>
+  </div>
+  <div class="hero-art" aria-label="Ilustrasi abstrak otak dan idea">
+    <div class="orbit"></div><div class="brain" aria-hidden="true">🧠</div>
+    <div class="float-card fc1"><strong>Rumah + Sekolah</strong>Strategi yang konsisten</div>
+    <div class="float-card fc2"><strong>Setiap anak berbeza</strong>Sokongan ikut keperluan</div>
+  </div>
+</section>
+<div class="wrap stats">
+  <div class="stat"><b>01 · Fahami</b><span>Kenali ADHD dan keperluan murid.</span></div>
+  <div class="stat"><b>02 · Bekerjasama</b><span>Satukan usaha keluarga dan sekolah.</span></div>
+  <div class="stat"><b>03 · Sokong</b><span>Rancang tindakan yang boleh dipantau.</span></div>
+</div>
+
+<section class="wrap fade-in" id="pengenalan">
+  <div class="section-head"><span class="kicker">01 · Pengenalan</span><h2>Kenali ADHD</h2><p>ADHD ialah gangguan perkembangan neuro yang boleh mempengaruhi tumpuan, kawalan impuls dan tahap aktiviti seseorang. Ciri dan keperluan setiap individu berbeza.</p></div>
+  <div class="grid">
+    <article class="card"><div class="iconbox">🎯</div><h3>Kesukaran memberi tumpuan</h3><p>Murid mungkin mudah terganggu, terlupa arahan atau sukar menyelesaikan tugasan yang panjang.</p></article>
+    <article class="card"><div class="iconbox">⚡</div><h3>Hiperaktif</h3><p>Sesetengah murid kelihatan banyak bergerak atau sukar duduk diam dalam situasi tertentu.</p></article>
+    <article class="card"><div class="iconbox">💬</div><h3>Impulsiviti</h3><p>Murid mungkin bertindak atau menjawab dengan cepat sebelum sempat mempertimbangkan keadaan.</p></article>
+  </div>
+  <div class="notice">Penting: ciri-ciri ini sahaja tidak mengesahkan ADHD. Penilaian dan nasihat profesional kesihatan diperlukan. Gunakan pendekatan yang menghormati kekuatan serta keperluan murid.</div>
+  <div class="section-head" style="margin-top:28px"><h2>Objektif produk</h2><p>Objektif produk ini adalah untuk meningkatkan kefahaman tentang ADHD serta menggalakkan kerjasama antara ibu bapa, guru dan pihak berkaitan dalam menyediakan sokongan yang konsisten kepada murid ADHD.</p></div>
+</section>
+
+<section class="wrap fade-in" id="kes">
+  <div class="section-head"><span class="kicker">02 · Kes kajian</span><h2>Kisah Amir</h2><p>Contoh situasi untuk meneroka bagaimana sokongan rumah dan sekolah boleh diselaraskan.</p></div>
+  <div class="two-col">
+    <article class="card">
+      <div class="case-top"><div class="avatar">👦</div><div><h3 style="margin:0">Amir, 9 tahun</h3><span class="muted">Murid sekolah rendah · Nama samaran</span></div></div>
+      <p>Amir digambarkan sebagai murid yang sukar memberikan tumpuan, mudah terganggu dan memerlukan sokongan untuk menyiapkan tugasan.</p>
+      <div style="margin-top:12px"><span class="pill">Tumpuan</span><span class="pill">Rutin</span><span class="pill">Kerjasama</span></div>
+      <div class="notice">Kes ini ialah contoh rekaan untuk tujuan penerangan, bukan rekod murid sebenar atau diagnosis klinikal.</div>
+    </article>
+    <article class="card">
+      <h3>Teroka situasi Amir</h3>
+      <div class="case-tabs" role="tablist" aria-label="Situasi Amir">
+        <button class="tab-btn" role="tab" id="tabRumah" aria-controls="panelAmir" aria-selected="true" data-case="rumah">Di rumah</button>
+        <button class="tab-btn" role="tab" id="tabSekolah" aria-controls="panelAmir" aria-selected="false" data-case="sekolah">Di sekolah</button>
+        <button class="tab-btn" role="tab" id="tabIsu" aria-controls="panelAmir" aria-selected="false" data-case="isu">Isu utama</button>
+      </div>
+      <div class="tab-panel" id="panelAmir" role="tabpanel" aria-live="polite"><p>Amir menghadapi kesukaran menyiapkan kerja sekolah dan mengikuti rutin. Ibu bapa boleh membantu dengan jadual yang mudah, arahan ringkas dan masa rehat yang dirancang.</p></div>
+    </article>
+  </div>
+</section>
+
+<section class="wrap fade-in" id="kementerian">
+  <div class="section-head"><span class="kicker">03 · Sokongan kerajaan</span><h2>Peranan kementerian</h2><p>Agensi kerajaan mempunyai fungsi yang berbeza. Keluarga boleh merujuk agensi berkaitan mengikut keperluan pendidikan, kesihatan atau pekerjaan.</p></div>
+  <div class="grid">
+    <article class="card org-card"><div class="iconbox">🏫</div><span class="tag">Pendidikan</span><h3>Kementerian Pendidikan Malaysia (KPM)</h3><p>KPM mengurus dasar dan perkhidmatan pendidikan. Pihak sekolah boleh bekerjasama dengan keluarga untuk menyesuaikan sokongan pembelajaran berdasarkan keperluan murid.</p><details><summary>Contoh sokongan</summary><p>Berbincang dengan guru tentang arahan yang jelas, tugasan berperingkat, rutin kelas dan cara berkongsi perkembangan murid.</p></details></article>
+    <article class="card org-card"><div class="iconbox">🩺</div><span class="tag">Kesihatan</span><h3>Kementerian Kesihatan Malaysia (KKM)</h3><p>KKM menyediakan perkhidmatan kesihatan dan maklumat untuk membantu keluarga mendapatkan penilaian serta nasihat profesional yang sesuai.</p><details><summary>Contoh sokongan</summary><p>Berunding dengan profesional kesihatan jika ada kebimbangan tentang perhatian, tingkah laku atau perkembangan kanak-kanak.</p></details></article>
+    <article class="card org-card"><div class="iconbox">🧰</div><span class="tag">Kemahiran dan pekerjaan</span><h3>Kementerian Sumber Manusia (KSM)</h3><p>KSM berfokus pada bidang pekerjaan, latihan dan pembangunan tenaga kerja. Peranannya lebih berkaitan dengan perancangan kemahiran dan peluang pekerjaan pada peringkat yang sesuai.</p><details><summary>Contoh sokongan</summary><p>Maklumat latihan kemahiran dan amalan pekerjaan inklusif boleh menjadi rujukan jangka panjang apabila individu memasuki alam pekerjaan.</p></details></article>
+  </div>
+</section>
+
+<section class="wrap fade-in" id="ngo">
+  <div class="section-head"><span class="kicker">04 · Sokongan komuniti</span><h2>Peranan NGO</h2><p>NGO boleh melengkapkan usaha keluarga dan agensi kerajaan melalui maklumat, kesedaran serta sokongan komuniti. Semak skop perkhidmatan semasa setiap organisasi sebelum membuat rujukan.</p></div>
+  <div class="two-col">
+    <article class="card org-card"><div class="iconbox">🤝</div><span class="tag">Maklumat dan advokasi</span><h3>Organisasi sokongan ADHD</h3><p>Organisasi yang khusus berkaitan ADHD, jika tersedia di kawasan keluarga, boleh menjadi tempat mendapatkan maklumat, jaringan sokongan dan panduan untuk memahami keperluan individu ADHD.</p><details><summary>Bagaimana ia membantu?</summary><p>Keluarga boleh mencari sesi penerangan, bahan pendidikan atau kumpulan sokongan yang mempunyai maklumat sahih. Pastikan organisasi dan perkhidmatannya disahkan sebelum disenaraikan sebagai rujukan.</p></details></article>
+    <article class="card org-card"><div class="iconbox">🌱</div><span class="tag">Sokongan perkembangan</span><h3>Persatuan Kebangsaan Autisme Malaysia (NASOM)</h3><p>NASOM memberi tumpuan kepada autisme, bukan ADHD. Sumbernya hanya sesuai sebagai rujukan tambahan umum jika topik atau keperluan perkembangan berkaitan; ia tidak patut dianggap sebagai perkhidmatan khusus ADHD.</p><details><summary>Perkara yang perlu diingat</summary><p>Autisme dan ADHD ialah keadaan yang berbeza. Dapatkan sokongan yang sesuai dengan keperluan individu dan semak terus skop perkhidmatan organisasi.</p></details></article>
+  </div>
+  <div class="notice">Tip: Jika tugasan memerlukan NGO yang benar-benar khusus ADHD, sahkan nama dan perkhidmatan organisasi tempatan terlebih dahulu. Jangan senaraikan organisasi sebagai penyedia perkhidmatan ADHD tanpa bukti yang boleh dipercayai.</div>
+</section>
+
+<section class="wrap fade-in" id="intervensi">
+  <div class="section-head"><span class="kicker">05 · Tindakan bersama</span><h2>Pelan intervensi</h2><p>Gunakan checklist ini sebagai contoh perancangan sokongan. Tandakan strategi yang telah dibincangkan atau dilaksanakan oleh keluarga dan sekolah.</p></div>
+  <div class="intervention-layout">
+    <article class="card">
+      <div class="iconbox">🏡</div><h3>Rumah dan sekolah: satu pasukan</h3>
+      <p class="muted">Ibu bapa dan guru berkongsi maklumat tentang perkembangan murid, menyelaraskan rutin serta menilai strategi yang berkesan. Matlamatnya ialah memberi sokongan yang konsisten, bukan menyalahkan murid atau keluarga.</p>
+      <div class="notice">Mulakan dengan satu atau dua strategi yang realistik. Semak semula bersama selepas tempoh yang dipersetujui.</div>
+    </article>
+    <article class="card">
+      <h3>Checklist sokongan</h3>
+      <div class="checklist" id="checklist">
+        <label class="check-item"><input type="checkbox"><span><b>Jadual yang konsisten</b><br>Gunakan rutin mudah di rumah dan sekolah.</span></label>
+        <label class="check-item"><input type="checkbox"><span><b>Arahan ringkas</b><br>Berikan satu atau dua arahan pada satu masa.</span></label>
+        <label class="check-item"><input type="checkbox"><span><b>Tugasan berperingkat</b><br>Bahagikan tugasan panjang kepada langkah kecil.</span></label>
+        <label class="check-item"><input type="checkbox"><span><b>Pujian yang khusus</b><br>Hargai usaha dan tingkah laku positif dengan jelas.</span></label>
+        <label class="check-item"><input type="checkbox"><span><b>Komunikasi berkala</b><br>Kongsi pemerhatian antara rumah dengan sekolah.</span></label>
+        <label class="check-item"><input type="checkbox"><span><b>Semak perkembangan</b><br>Nilai sama ada strategi membantu dan ubah jika perlu.</span></label>
+      </div>
+      <div class="progress-wrap"><div class="progress-meta"><span>Kemajuan checklist</span><b id="progressText">0 daripada 6</b></div><div class="progress" role="progressbar" aria-label="Kemajuan checklist" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" id="progress"><div class="progress-bar" id="progressBar"></div></div></div>
+      <button class="btn secondary" id="resetChecklist" style="margin-top:14px">Tetapkan semula</button>
+    </article>
+  </div>
+</section>
+
+<section class="wrap fade-in" id="rujukan">
+  <div class="section-head"><span class="kicker">06 · Rujukan</span><h2>Sumber maklumat lanjut</h2><p>Pautan berikut boleh membantu pembaca mendapatkan maklumat umum dan panduan daripada sumber rasmi. Sumber ini bukan pengganti nasihat profesional.</p></div>
+  <div class="sources">
+    <a class="card source" href="https://www.moh.gov.my/" target="_blank" rel="noopener noreferrer"><div class="iconbox">🩺</div><div><b>Kementerian Kesihatan Malaysia</b><small>Maklumat dan perkhidmatan kesihatan · moh.gov.my ↗</small></div></a>
+    <a class="card source" href="https://www.moe.gov.my/" target="_blank" rel="noopener noreferrer"><div class="iconbox">🏫</div><div><b>Kementerian Pendidikan Malaysia</b><small>Maklumat pendidikan · moe.gov.my ↗</small></div></a>
+    <a class="card source" href="https://www.cdc.gov/adhd/" target="_blank" rel="noopener noreferrer"><div class="iconbox">📘</div><div><b>CDC — ADHD</b><small>Maklumat tentang ciri, diagnosis dan pengurusan ADHD ↗</small></div></a>
+    <a class="card source" href="https://www.nhs.uk/conditions/attention-deficit-hyperactivity-disorder-adhd/" target="_blank" rel="noopener noreferrer"><div class="iconbox">🌐</div><div><b>NHS — ADHD</b><small>Panduan umum tentang ADHD ↗</small></div></a>
+  </div>
+  <div class="card" style="margin-top:18px"><h3>Pesanan kepada ibu bapa dan guru</h3><p class="muted">Setiap murid mempunyai kekuatan dan keperluan yang berbeza. Komunikasi yang menghormati murid, sokongan yang konsisten dan penilaian berkala boleh membantu membina persekitaran pembelajaran yang lebih positif.</p></div>
+</section>
+</main>
+<footer><div class="wrap"><b>Bersama Menyokong Anak</b><p>Produk pendidikan interaktif tentang ADHD dan kesinambungan sokongan antara rumah dengan sekolah.</p><span>Nota: Kandungan ini untuk pendidikan umum dan tidak bertujuan menggantikan diagnosis atau nasihat profesional.</span></div></footer>
+<button class="backtop" id="backTop" aria-label="Kembali ke atas" title="Kembali ke atas">↑</button>
+<script>
+const menuBtn=document.getElementById('menuBtn');
+const mainNav=document.getElementById('mainNav');
+menuBtn.addEventListener('click',()=>{const open=mainNav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));});
+mainNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mainNav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}));
+const caseContent={
+ rumah:'Amir menghadapi kesukaran menyiapkan kerja sekolah dan mengikuti rutin. Ibu bapa boleh membantu dengan jadual yang mudah, arahan ringkas dan masa rehat yang dirancang.',
+ sekolah:'Di sekolah, Amir mudah terganggu dan mungkin memerlukan peringatan untuk kembali fokus. Guru boleh membahagikan tugasan kepada langkah kecil, menjelaskan arahan dan memberi maklum balas yang positif.',
+ isu:'Isu utama dalam contoh ini ialah kesinambungan sokongan antara rumah dengan sekolah. Ibu bapa dan guru perlu berkongsi pemerhatian serta menyelaraskan strategi supaya Amir menerima rutin dan jangkaan yang lebih konsisten.'
+};
+document.querySelectorAll('[data-case]').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('[data-case]').forEach(b=>b.setAttribute('aria-selected',String(b===btn)));
+ document.getElementById('panelAmir').innerHTML='<p>'+caseContent[btn.dataset.case]+'</p>';
+}));
+const checks=[...document.querySelectorAll('#checklist input')];
+const progressText=document.getElementById('progressText'),progressBar=document.getElementById('progressBar'),progress=document.getElementById('progress');
+function updateProgress(){const done=checks.filter(c=>c.checked).length;progressText.textContent=done+' daripada '+checks.length;progressBar.style.width=(done/checks.length*100)+'%';progress.setAttribute('aria-valuenow',String(done));}
+checks.forEach(c=>c.addEventListener('change',updateProgress));
+document.getElementById('resetChecklist').addEventListener('click',()=>{checks.forEach(c=>c.checked=false);updateProgress();});
+document.getElementById('backTop').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const sections=[...document.querySelectorAll('main section[id]')];
+const navLinks=[...document.querySelectorAll('nav a')];
+if('IntersectionObserver' in window){
+ const reveal=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');reveal.unobserve(e.target);}}),{threshold:.08});
+ document.querySelectorAll('.fade-in').forEach(el=>reveal.observe(el));
+ const activeObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));}}),{rootMargin:'-25% 0px -65% 0px'});
+ sections.forEach(s=>activeObserver.observe(s));
+}else{document.querySelectorAll('.fade-in').forEach(el=>el.classList.add('visible'));}
+</script>
+</body>
+</html>
